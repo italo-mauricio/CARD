@@ -17,14 +17,16 @@
                         <input type="text" name="card-number"
                          id="card-number" maxlength="19" 
                          placeholder="1234 5678 9101 1121"
-                         required>
+                         required
+                         onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                     </div>
                     <div class="name-container">
                         <label>Holder</label>
                         <input type="text" name="name-text"
                          id="name-text" maxlength="30" 
                          placeholder="ITALO MAURICIO"
-                         required>
+                         required
+                         onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '">
 
                     </div>
                     <div class="infos-container">
@@ -33,15 +35,20 @@
                             <input type="text" name="Valid-thru-text"
                             id="Valid-thru-text" maxlength="S" 
                             placeholder="02/40"
-                            required>
+                            required
+                            onkeypress="return event.charCode >=48 && event.charCode <= 57">
+
                         </div>
                         <div class="cvv-container">
                             <label>CVV</label>
                             <input type="text" name="cvv-text"
                             id="cvv-text" maxlength="4" 
                             placeholder="1234"
-                            required>
+                            required
+                            onkeypress="return event.charCode >=48 && event.charCode <= 57">
                         </div>
+                        <input type="submit" value="ADD" id="add">
+                    </form>
                         <div class="container-right">
                             <div class="card">
                                 <div class="intern">
