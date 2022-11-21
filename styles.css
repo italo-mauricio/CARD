@@ -63,7 +63,49 @@ body {
     transform: rotate(90deg);
 }
 
+.chip {
+    height: 40px;
+    position: relative;
+    left: 87%;
+    bottom: 20px;
+}
 
+.card-number {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    
+}
+
+.card-holder {
+    color: whitesmoke;
+}
+
+
+.card label {
+    font-size: .7rem;
+}
+
+.card-infos{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: white;
+
+}
+
+
+#credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+    
+}
 
 @media (max-width: 1024px){
     .ui{
