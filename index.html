@@ -14,71 +14,59 @@
                 <form id="credit-card">
                     <div class="number-container">
                         <label>Card Number</label>
-                        <input type="text" name="card-number"
-                         id="card-number" maxlength="19" 
-                         placeholder="1234 5678 9101 1121"
-                         required
-                         onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <input type="text" name="card-number" id="card-number" maxlength="19" placeholder="1234 5678 9101 1121"
+                        required
+                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                     </div>
                     <div class="name-container">
                         <label>Holder</label>
-                        <input type="text" name="name-text"
-                         id="name-text" maxlength="30" 
-                         placeholder="ITALO MAURICIO"
-                         required
-                         onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '">
-
+                        <input type="text" name="name-text" id="name-text" maxlength="30" placeholder="ITALO MAURICIO"
+                        required
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '">
                     </div>
                     <div class="infos-container">
                         <div class="expiration-container">
                             <label>Valid-thru</label>
-                            <input type="text" name="Valid-thru-text"
-                            id="Valid-thru-text" maxlength="S" 
-                            placeholder="02/40"
+                            <input type="text" name="valid-thru-text" id="valid-thru-text" maxlength="5" placeholder="02/40"
                             required
+                            
                             onkeypress="return event.charCode >=48 && event.charCode <= 57">
-
                         </div>
                         <div class="cvv-container">
                             <label>CVV</label>
-                            <input type="text" name="cvv-text"
-                            id="cvv-text" maxlength="4" 
-                            placeholder="1234"
+                            <input type="text" name="cvv-text" id="cvv-text" maxlength="4" placeholder="1234"
                             required
                             onkeypress="return event.charCode >=48 && event.charCode <= 57">
                         </div>
-                        <input type="submit" value="ADD" id="add">
-                    </form>
-                        <div class="container-right">
-                            <div class="card">
-                                <div class="intern">
-                                    <img class="aproximation" src="img/aprox.png" alt="aproximation">
-                                    <div class="card-number">
-                                        <div class="numberv1">1234 5678 9101 1121</div>
-                                    </div>
-                                    <div class="card-holder">
-                                        <label>Holder</label>
-                                        <div class="name-v1">ITALO MAURICIO</div>
-                                    </div>
-                                    <div class="card-infos">
-                                        <div class="exp">
-                                            <label>Valid-thru</label>
-                                            <div class="expiration-v1">02/40</div>
-                                        </div>
-                                        <div class="cvv">
-                                            <label>CVV</label>
-                                            <div class="expiration-v1">123</div>
-                                        </div>
-                                    </div>
-                                    <img class="chip" src="img/chip.png" alt="chip">
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+                    <input type="submit" value="ADD" id="add">
                 </form>
             </div>
-            <div class="container-right"></div>
+            <div class="container-right">
+                <div class="card">
+                    <div class="intern">
+                        <img class="aproximation" src="img/aprox.png" alt="aproximation">
+                        <div class="card-number">
+                            <div class="number-vl">1234 5678 9101 1121</div>
+                        </div>
+                        <div class="card-holder">
+                            <label>Holder</label>
+                            <div class="name-vl">ITALO MAURICIO</div>
+                        </div>
+                        <div class="card-infos">
+                            <div class="exp">
+                                <label>valid-thru</label>
+                                <div class="expiration-vl">02/40</div>
+                            </div>
+                            <div class="cvv">
+                                <label>CVV</label>
+                                <div class="cvv-vl">123</div>
+                            </div>
+                        </div>
+                        <img class="chip" src="img/chip.png" alt="chip">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="index.js"></script>
